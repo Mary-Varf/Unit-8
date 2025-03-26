@@ -1,0 +1,42 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build",
+        "type": "shell",
+        "command": "javac",
+        "args": [
+          "--module-path",
+          "lib",
+          "--add-modules",
+          "javafx.controls,javafx.fxml",
+          "-cp",
+          "lib/json-20231013.jar",
+          "WeatherApp.java"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      },
+      {
+        "label": "run",
+        "type": "shell",
+        "command": "java",
+        "args": [
+          "--module-path",
+          "lib",
+          "--add-modules",
+          "javafx.controls,javafx.fxml",
+          "-cp",
+          ".;lib/json-20231013.jar",
+          "WeatherApp"
+        ],
+        "group": {
+          "kind": "test",
+          "isDefault": true
+        }
+      }
+    ]
+  }
+  
