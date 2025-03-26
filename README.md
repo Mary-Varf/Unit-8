@@ -2,7 +2,7 @@
 
 **WeatherApp** is a JavaFX-based desktop application that provides real-time weather information for any location. It uses the **OpenWeatherMap API** to fetch current weather data and forecasts.
 
-[![Watch the video](https://jmp.sh/s/nzZgXBBfILFur4ExY6Pw)](https://jmp.sh/s/nzZgXBBfILFur4ExY6Pw)
+[![Watch the video](https://github.com/Mary-Varf/Unit-8/blob/main/Screenshot_2.png)](https://jmp.sh/s/nzZgXBBfILFur4ExY6Pw)
 
 ---
 
