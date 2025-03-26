@@ -1,6 +1,5 @@
 package src.UI;
 
-import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.ZoneOffset;
@@ -21,27 +20,6 @@ public class BackgroundCreater {
 
     public String getBackground(long timezoneOffset) {
         final String url;
-        // long currentTimeUTC = Instant.now().getEpochSecond();
-
-        // // Adjust sunrise and sunset times for the given timezoneOffset
-        // long adjustedSunrise = sunrise + timezoneOffset;
-        // long adjustedSunset = sunset + timezoneOffset;
-
-        // // Determine if it is night, sunrise, day, or sunset
-        // if (currentTimeUTC < adjustedSunrise) {
-        //     url = urlNight;
-        // } else if (currentTimeUTC >= adjustedSunrise && currentTimeUTC < adjustedSunset) {
-        //     url = urlSummerDay;
-        // } else if (currentTimeUTC >= adjustedSunset) {
-        //     url = urlNight;
-        // } else {
-        //     url = urlNight; 
-        // }
-
-
-        // System.out.print(currentTimeUTC + "  " +adjustedSunrise + "   "+  adjustedSunset);
-
-
 
         ZonedDateTime gmtTime = ZonedDateTime.now(ZoneId.of("GMT"));
         long gmtTimeInSeconds = gmtTime.toEpochSecond();
