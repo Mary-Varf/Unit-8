@@ -8,9 +8,9 @@ import java.time.ZonedDateTime;
 public class BackgroundCreater {
     private Long sunrise;
     private Long sunset;
-    final String urlSummerDay = "file:src/img/day.png";
-    final String urlNight = "file:src/img/night.png";
-    final String urlMorning = "file:src/img/sunrise.png";
+    final String urlSummerDay = "file:src/img/day.jpg";
+    final String urlNight = "file:src/img/night.jpg";
+    final String urlMorning = "file:src/img/sunrise.jpg";
     final String urlSunSet = "file:src/img/sunset.png";
 
     public BackgroundCreater (Long sunrise, Long sunset) {
@@ -31,6 +31,7 @@ public class BackgroundCreater {
         LocalDateTime sunsetDate = LocalDateTime.ofEpochSecond(sunset, 0, ZoneOffset.UTC);
         int sunriseHour = sunriseDate.getHour();
         int sunsetHour = sunsetDate.getHour();
+        
         if (hour < sunriseHour) {
             url = urlNight;
         }
