@@ -48,8 +48,8 @@ cd WeatherApp
 
 ---
 ### Compile and Run
-javac src/*.java
-java src.WeatherApp
+- javac -d bin -cp "lib/*" src/WeatherApp.java src/UI/Switcher.java src/ForecastPanel.java src/HistoryPanel.java src/WeatherData.java src/WeatherService.java src/UI/BackgroundCreater.java src/Config.java src/UI/StyledButton.java src/UI/StyledTextField.java
+- java --module-path "C:/Program Files/Java/javafx-sdk/lib" --add-modules javafx.controls,javafx.fxml -cp "bin;lib/*" src.WeatherApp
 
 
 
