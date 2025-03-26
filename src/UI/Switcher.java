@@ -84,10 +84,6 @@ public class Switcher extends Pane {
             );
         }
 
-        // button.setOnMouseEntered(e -> button.setStyle(
-        //     button.getStyle().replace("-fx-background-color:", "-fx-background-color: #9a4eff;")
-        // ));
-
         button.setOnMouseExited(e -> setButtonStyle(button, isActive));
 
         button.setOnMousePressed(e -> button.setStyle(

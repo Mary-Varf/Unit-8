@@ -196,11 +196,14 @@ public class WeatherApp extends Application {
                 if (weatherService.getWeatherByCoordinates(lat, lon) != null) {
                     weatherData = weatherService.getWeatherByCoordinates(lat, lon);
                 }
-            } else if (weatherService.getWeather(input) != null) {
-                weatherData = weatherService.getWeather(input);
             } else {
-                showPopup("Invalid location.");
-                return;
+                WeatherData weatherDataTemp = weatherService.getWeather(input);
+                if (weatherDataTemp != null) {
+                    weatherData = weatherService.getWeather(input);
+                } else {
+                    showPopup("Invalid location.");
+                    return;
+                }
             }
 
             Platform.runLater(() -> {
